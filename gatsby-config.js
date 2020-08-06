@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    description: "¿Estás trabajando en algo genial? ¡Me encantaría ayudar a que esto suceda! ¡Envíame un email y comienza tu proyecto ahora mismo! Simplemente hazlo.",
+    description: "¿Estás trabajando en algo genial? ¡Me encantaría ayudar a que esto suceda! ¡Envíame un correo y comenzá tu proyecto ahora mismo!",
     locale: "es",
     title: "Renzo Mayer",
   },
