@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    description: "¿Estás trabajando en algo genial? ¡Me encantaría ayudar a que esto suceda! ¡Envíame un correo y comenzá tu proyecto ahora mismo!",
+    title: "Renzo Mayer - Desarrollador Web, Fotógrafo & Filmmaker",
+    description: "¿Estás trabajando genial? ¡Me encantaría ayudarte! ¡Envíame un correo y comenzá tu proyecto ahora mismo!",
     locale: "es",
-    title: "Renzo Mayer",
   },
     plugins: [
       {
         resolve: "my-intro",
         options: {
-          theme: "classic",
+          theme: "dark-blue",
         },
       },
     ],
