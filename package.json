@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@wkocjan/gatsby-theme-intro": "^1.0.11",
     "gatsby": "^2.24.15",
+    "my-intro": "https://github.com/renzit/my-intro.git",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

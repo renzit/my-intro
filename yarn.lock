@@ -8908,6 +8908,15 @@ mute-stream@0.0.8, mute-stream@~0.0.4:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
+"my-intro@https://github.com/renzit/my-intro.git":
+  version "1.0.0"
+  resolved "https://github.com/renzit/my-intro.git#ff1baaa1df5e10685b8aba7f0595f806a702e489"
+  dependencies:
+    "@wkocjan/gatsby-theme-intro" "^1.0.11"
+    gatsby "^2.24.15"
+    react "^16.13.1"
+    react-dom "^16.13.1"
+
 name-all-modules-plugin@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/name-all-modules-plugin/-/name-all-modules-plugin-1.0.1.tgz#0abfb6ad835718b9fb4def0674e06657a954375c"
