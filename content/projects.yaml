@@ -1,15 +1,15 @@
-- name: Ojibwa
-  url: https://ojibwa.uy/
-  description: Sitio Web de Fotógrafo Profesional Maximiliano Echenique, esta integrado con cloudinary para organización y optimización de imágenes.
+- name: Escribano Público Sebastían Linares Mayer
+  url: https://esclinaresmayer.uy/
+  description: 
   status: in progress
   tags:
     - JavaScript
     - Gatsby
   icon: github
 
-- name: Example 2
-  url: https://github.com
-  description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
+- name: Ojibwa Fotografía
+  url: https://ojibwa.uy/
+  description: Sitio Web de Fotógrafo Profesional Maximiliano Echenique, esta integrado con cloudinary para organización y optimización de imágenes.
   status: live
   tags:
     - JavaScript
