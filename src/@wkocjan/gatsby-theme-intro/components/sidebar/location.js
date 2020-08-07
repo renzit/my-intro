@@ -14,7 +14,7 @@ const Location = ({ location, relocation }) => (
     </div>
     {relocation && (
       <div className="text-xs uppercase mt-2 font-semibold text-front font-header">
-        Disponible para rubicación
+        Disponible para reubicación
       </div>
     )}
   </>

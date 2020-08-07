@@ -1,5 +1,5 @@
 import React from "react"
-import { FaCompass } from "react-icons/fa"
+// import { FaCompass } from "react-icons/fa"
 import { shape, ProfileType } from "../../types"
 
 const Summary = ({ profile }) => (
@@ -24,7 +24,7 @@ const Summary = ({ profile }) => (
       </h5>
       <div className="font-header font-light text-2xl text-front leading-tight">
         {profile.focus}
-        {profile.focus_url && (
+        {/* {profile.focus_url && (
           <div>
             <a
               aria-label="website"
@@ -36,7 +36,7 @@ const Summary = ({ profile }) => (
               <FaCompass />
             </a>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   </div>
