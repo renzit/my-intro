@@ -11,19 +11,16 @@
   focus: Experiencias digitales
   focus_url: https://gatsbyjs.org
   about: |
-    Soy un creador y desarrollador web, apasionado por el arte, la tecnología, el diseño y la fotografía.
-    
-    Actualmente me dedico a desarrollar, producir y comercializar productos digitales de alta calidad a precios competitivos.
+    Me asocio con startups y emprendedores para crear productos digitales que ayuden a los clientes a superar desafíos y crear conexiones duraderas con millones de personas todos los días.
   skills:
-    - Creatividad
-    - Agilidad
-    - Organización
+    - Solución de problemas complejos
+    - Pensamiento analítico
+    - Juego en equipo
   tools:
     - NodeJS & PHP
     - Premiere Pro & Lightroom
-    - VScode
   budget:
     currency: $
     min: 5
-    max: 30
+    max: 50
     default: 10

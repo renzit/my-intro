@@ -1,16 +1,25 @@
+- name: Yum que rico!
+  url: https://www.instagram.com/yum.que.rico/
+  description: 
+  status: listo
+  tags:
+    - Fotografia
+    - Filmmaking
+  icon: website
+
 - name: Escribano Público Sebastían Linares Mayer
   url: https://esclinaresmayer.uy/
   description: 
-  status: in progress
+  status: en desarrollo
   tags:
     - JavaScript
     - Gatsby
-  icon: github
+  icon: website
 
 - name: Ojibwa Fotografía
   url: https://ojibwa.uy/
   description: Sitio Web de Fotógrafo Profesional Maximiliano Echenique, esta integrado con cloudinary para organización y optimización de imágenes.
-  status: live
+  status: listo
   tags:
     - JavaScript
     - HTML

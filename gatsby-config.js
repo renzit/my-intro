@@ -6,9 +6,10 @@ module.exports = {
   },
     plugins: [
       {
-        resolve: "my-intro",
+        resolve: "@wkocjan/gatsby-theme-intro",
         options: {
-          theme: "dark-blue",
+          showThemeLogo: false,
+          theme: "classic",
         },
       },
     ],
