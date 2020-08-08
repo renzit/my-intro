@@ -1,19 +1,34 @@
 - name: Yum que rico!
   url: https://www.instagram.com/yum.que.rico/
-  description: 
+  description: Socio de emprendimiento que busca mejorar la visibilidad y herramientas de emprendedores gastronómicos y restaurantes.
   status: listo
   tags:
     - Fotografia
     - Filmmaking
+    - Sitio Web
+    - SEO
+    - Redes Sociales
   icon: website
 
 - name: Escribano Público Sebastían Linares Mayer
   url: https://esclinaresmayer.uy/
-  description: 
+  description: Desarrollo web en Gatsby y Netlify, explorando un concepto con foco en identidad personal y servicios profesionales, bajo un desarollo iterativo, buscando agregar valor en cada etapa del desarrollo en conjunto con el cliente.
   status: en desarrollo
   tags:
     - JavaScript
     - Gatsby
+    - Netlify
+    - Fotografía
+    - SEO
+  icon: website
+
+- name: Escuela de Actuación Integral
+  url: https://eai.com.uy/
+  description: Desarrollo Wordpress para EAI Teatro, el mismo constó de migración, customización de template y puesta a punto bajo el cms wordpress, considerando que es un sitio web que tenia 10 años de antiguedad previamente se dio de alta en search console lo que permitio medir y optimizar las keywords dominantes.
+  status: listo
+  tags:
+    - Wordpress
+    - SEO
   icon: website
 
 - name: Ojibwa Fotografía
