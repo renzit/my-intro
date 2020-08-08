@@ -1,14 +1,3 @@
-- name: Yum que rico!
-  url: https://www.instagram.com/yum.que.rico/
-  description: Socio de emprendimiento que busca mejorar la visibilidad y herramientas de emprendedores gastronómicos y restaurantes.
-  status: listo
-  tags:
-    - Fotografia
-    - Filmmaking
-    - Sitio Web
-    - SEO
-    - Redes Sociales
-  icon: website
 
 - name: Escribano Público Sebastían Linares Mayer
   url: https://esclinaresmayer.uy/
@@ -20,6 +9,18 @@
     - Netlify
     - Fotografía
     - SEO
+  icon: website
+
+- name: Yum que rico!
+  url: https://www.instagram.com/yum.que.rico/
+  description: Socio de emprendimiento que busca mejorar la visibilidad y herramientas de emprendedores gastronómicos y restaurantes.
+  status: listo
+  tags:
+    - Fotografia
+    - Filmmaking
+    - Sitio Web
+    - SEO
+    - Redes Sociales
   icon: website
 
 - name: Escuela de Actuación Integral
