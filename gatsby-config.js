@@ -1,8 +1,10 @@
+const config = require('./config')
+
 module.exports = {
   siteMetadata: {
-    title: "Renzo Mayer - Desarrollador Web, Fotógrafo & Filmmaker",
-    description: "¿Estás trabajando en algo genial? ¡Me encantaría ayudarte! ¡Envíame un correo y comenzá tu proyecto ahora mismo!",
-    locale: "es",
+    title: config.siteTitle,
+    description: config.siteDescription,
+    locale: config.siteLocale,
   },
   plugins: [
     {
@@ -16,7 +18,7 @@ module.exports = {
   {
     resolve: "gatsby-plugin-google-tagmanager",
     options: {
-      id: "GTM-MTQ4W7R",
+      id: config.googleTagManagerID,
     },
   }
   ],
