@@ -7,6 +7,7 @@
     "@wkocjan/gatsby-theme-intro": "1.0.11",
     "gatsby": "^2.24.15",
     "gatsby-plugin-google-tagmanager": "^2.3.11",
+    "gatsby-plugin-manifest": "^2.4.22",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
