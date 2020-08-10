@@ -12,6 +12,11 @@ const Location = ({ location, relocation }) => (
         {location}
       </span>
     </div>
+    <br />
+    <div className="inline-flex items-right bg-front mt-2 w-auto">
+    <a className="text-back font-header font-bold py-1 px-3 text-lg" href="https://renzomayer.dev/Renzo-Mayer-resume.pdf" rel="noreferrer noopener" target="_blank">My resume</a>
+    </div>
+    <br />
     {relocation && (
       <div className="text-xs uppercase mt-2 font-semibold text-front font-header">
         Disponible para reubicación
