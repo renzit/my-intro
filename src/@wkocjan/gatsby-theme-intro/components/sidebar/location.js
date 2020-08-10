@@ -14,7 +14,7 @@ const Location = ({ location, relocation }) => (
     </div>
     <br />
     <div className="inline-flex items-right bg-front mt-2 w-auto">
-    <a className="text-back font-header font-bold py-1 px-3 text-lg" href="https://renzomayer.dev/Renzo-Mayer-resume.pdf" rel="noreferrer noopener" target="_blank">My resume</a>
+    <a className="text-back font-header font-bold py-1 px-3 text-lg" href="https://renzomayer.dev/Renzo-Mayer-resume.pdf" rel="noreferrer noopener" target="_blank">Curriculum Vitae</a>
     </div>
     <br />
     {relocation && (
