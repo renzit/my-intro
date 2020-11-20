@@ -13,7 +13,7 @@ const ContactForm = ({ email, budget }) => {
         className="font-header font-semibold text-front text-sm uppercase mt-12 mb-3"
         id="contact"
       >
-        Conversemos
+        Contact
       </h5>
 
       <form
@@ -24,11 +24,11 @@ const ContactForm = ({ email, budget }) => {
         <div className="flex flex-wrap w-full">
           <div className="w-full lg:w-1/3 py-px lg:px-px">
             <input
-              aria-label="Nombre"
+              aria-label="Name"
               autoComplete="name"
               className="form-input"
               name="name"
-              placeholder="NOMBRE"
+              placeholder="Name"
               required
               type="text"
             />
@@ -39,7 +39,7 @@ const ContactForm = ({ email, budget }) => {
               autoComplete="email"
               className="form-input"
               name="email"
-              placeholder="EMAIL"
+              placeholder="Email"
               required
               type="email"
             />
@@ -58,7 +58,7 @@ const ContactForm = ({ email, budget }) => {
                     <span className="absolute inline-block bg-lead inset-0 m-1"></span>
                   )}
                 </span>
-                <span className="text-front opacity-50 uppercase">PRESUPUESTO</span>
+                <span className="text-front opacity-50 uppercase">Inquiry</span>
               </label>
             </div>
           </div>
@@ -78,7 +78,7 @@ const ContactForm = ({ email, budget }) => {
                   htmlFor="budget"
                   className="block opacity-50 text-front px-4 py-3 h-full font-header text-sm uppercase font-semibold leading-tight"
                 >
-                  INVERSIÓN
+                  Budget
                 </label>
               </div>
               <div className="w-3/4 lg:w-4/5 p-4 bg-back-light">
@@ -93,7 +93,7 @@ const ContactForm = ({ email, budget }) => {
                   type="range"
                 />
                 <div className="font-header font-semibold leading-none text-front opacity-50">
-                  {budget.currency} {selectedBudget} MIL
+                  {budget.currency} {selectedBudget} K
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ const ContactForm = ({ email, budget }) => {
             <input
               className="font-header inline-block font-semibold px-6 py-2 leading-tight cursor-pointer outline-none bg-front text-back-light uppercase mr-4 my-4 transition-opacity duration-150 hover:opacity-75"
               type="submit"
-              value="Enviar"
+              value="Submit"
             />
           </div>
         </div>
