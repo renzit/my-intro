@@ -8,7 +8,7 @@ const ProjectStatus = ({ status }) => (
         status === "listo" ? "bg-green-500" : "bg-orange-500"
       }`}
     ></span>
-    Estado: {status}
+    Status: {status}
   </li>
 )
 
