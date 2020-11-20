@@ -4,7 +4,7 @@ import { ProfileType } from "../../types"
 const Tools = ({ tools }) => (
   <>
     <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
-      Principales herramientas
+    MAIN TOOLS
     </h5>
     <ul className="flex-col mt-2">
       {tools.map(tool => (

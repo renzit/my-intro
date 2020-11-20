@@ -12,7 +12,7 @@ const Header = ({ initials }) => (
       href="#contact"
     >
       <FaEnvelope className="inline-block h-6 w-6 lg:hidden" />
-      <span className="hidden lg:block">Conversemos</span>
+      <span className="hidden lg:block">Contact Me</span>
     </a>
   </header>
 )
