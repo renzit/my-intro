@@ -18,8 +18,8 @@ const Location = ({ location, relocation }) => (
     </div>
     <br />
     {relocation && (
-      <div className="text-xs uppercase mt-2 font-semibold text-front font-header">
-        Disponible para reubicación
+      <div className="text-xs uppercase mt-2 font-semibold text-front font-header">     
+        Available for relocation
       </div>
     )}
   </>

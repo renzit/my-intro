@@ -2,23 +2,24 @@
   initials: RM
   name: Renzo Mayer
   email: rnzmayer@gmail.com
-  profession: Desarrollador Web & Creador Audiovisual
+  profession: Web Developer
   image: images/profile.jpg
   location: Montevideo, Uruguay
   relocation: true
   company: Freelance
   for_hire: true
-  focus: Experiencias digitales
+  focus: Web apps
   focus_url: https://gatsbyjs.org
   about: |
-    Me asocio con startups y emprendedores para crear productos digitales que ayuden a los clientes a superar desafíos y crear conexiones duraderas con millones de personas todos los días.
+    I love solving problems through web application development, from ideation to launching and iteration. If you have a problem, I'll help you develop ideas to solve it. If you have an idea, I can quickly prototype a system to implement it. If you have a system, I can help improve and fix issues in it.
   skills:
-    - Solución de problemas complejos
-    - Pensamiento analítico
-    - Jugador de equipo
+    - Complex problem solving
+    - Analytical thinking
+    - Team player
   tools:
-    - Javascript & PHP
-    - Premiere Pro & Lightroom
+    - NodeJS, PHP
+    - Web/Cloud APIs, 
+    - HTML / CSS
   budget:
     currency: $
     min: 5

@@ -1,41 +1,41 @@
 
 - name: Escribano Público Sebastían Linares Mayer
   url: https://esclinaresmayer.uy/
-  description: Desarrollo web en Gatsby y Netlify, explorando un concepto con foco en identidad personal y servicios profesionales, bajo un desarollo iterativo, buscando agregar valor en cada etapa del desarrollo en conjunto con el cliente.
-  status: en desarrollo
+  description: Web development in Gatsby and Netlify, exploring a concept focused on personal identity and professional services, builded under an iterative development, seeking to add value at each stage of development together with the client.
+  status: developing
   tags:
     - JavaScript
     - Gatsby
     - Netlify
-    - Fotografía
     - SEO
   icon: website
 
 - name: Yum que rico!
   url: https://www.instagram.com/yum.que.rico/
-  description: Socio de emprendimiento que busca mejorar la visibilidad y herramientas de emprendedores gastronómicos y restaurantes.
-  status: listo
+  description: co-founder, group of people with a mission to improve the visibility and tools of gastronomic entrepreneurs and restaurants.
+  status: live
   tags:
-    - Fotografia
+    - Photography
     - Filmmaking
-    - Sitio Web
+    - Websites
     - SEO
-    - Redes Sociales
+    - Community Managment
+    - Design
   icon: website
 
 - name: Escuela de Actuación Integral
   url: https://eai.com.uy/
-  description: Desarrollo Wordpress para EAI Teatro, el mismo constó de migración, customización de template y puesta a punto bajo el cms wordpress, considerando que es un sitio web que tenia 10 años de antiguedad previamente se dio de alta en search console lo que permitio medir y optimizar las keywords dominantes.
-  status: listo
+  description: Wordpress development for EAI Teatro, it consisted of migration, template customization and fine-tuning under the wordpress cms, considering that it is a website that was 10 years old, it was previously registered in the search console, which allowed to measure, mantain and optimize the dominant keywords.
+  status: live
   tags:
     - Wordpress
     - SEO
   icon: website
 
-- name: Ojibwa Fotografía
+- name: Ojibwa Photography
   url: https://ojibwa.uy/
-  description: Sitio Web de Fotógrafo Profesional Maximiliano Echenique, esta integrado con cloudinary para organización y optimización de imágenes.
-  status: listo
+  description: Website of Professional Photographer Maximiliano Echenique, is integrated with cloudinary for organization and optimization of images.
+  status: live
   tags:
     - JavaScript
     - HTML

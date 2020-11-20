@@ -6,7 +6,7 @@ const WorkHistory = ({ history }) => {
   return (
     <>
       <h5 className="font-header font-semibold text-front text-sm uppercase mt-12 mb-3 text-center">
-        Experiencia
+        WORK HISTORY
       </h5>
       <div className="history flex flex-col relative pt-6 pb-6">
         {history.map(({ company, period, position, url }, i) => (
