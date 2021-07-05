@@ -39,6 +39,7 @@ jobs:
           message+=\"
           echo "::set-output name=message::$message"
           echo "$message"
+      - id: format_lighthouse_score
         script: |
           const url_tested = ${{ steps.lighthouse_audit.outputs.manifest }}[0].url;
           console.log({ url_tested })
@@ -49,7 +50,7 @@ jobs:
         env:
           SLACK_CHANNEL: integracion
           SLACK_COLOR: ${{ job.status }}
-          SLACK_TITLE: ":zap: Web Performance for [${{ github.event.repository.name }}](${{steps.test_var.outputs.url}})"
+          SLACK_TITLE: ":zap: Web Performance for [${{ github.event.repository.name }}](${{steps.format_lighthouse_score.outputs.url}})"
           SLACK_MESSAGE: ${{steps.test_var.outputs.message}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_FOOTER: "Powered by Alfred bot"
