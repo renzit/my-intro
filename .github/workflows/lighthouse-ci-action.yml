@@ -21,7 +21,7 @@ jobs:
       - id: test_var
         run: |
           lighhouseResult=`cat ${{ steps.lighthouse_audit.outputs.resultsPath }}/lhr-*.json`
-          urlTested={{ steps.lighthouse_audit.outputs.manifest }}
+          urlTested={{ steps.lighthouse_audit.outputs.links }}
           echo "$urlTested"
           fcp=`echo FCP: $(jq -r '.audits["first-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           lcp=`echo LCP $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
