@@ -55,5 +55,5 @@ jobs:
           SLACK_TITLE: ":zap: Web Performance for < ${{steps.format_lighthouse_score.outputs.url}} >"
           SLACK_MESSAGE: ${{steps.test_var.outputs.message}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_FOOTER: "Powered by Alfred bot"
+          SLACK_FOOTER: "Powered by Alfred bot [Hola](www.google.com) <hola|www.google.com> <www.google.com|hola>"
           MSG_MINIMAL: true
