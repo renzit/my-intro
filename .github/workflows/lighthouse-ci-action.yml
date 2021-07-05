@@ -40,6 +40,7 @@ jobs:
           echo "::set-output name=message::$message"
           echo "$message"
       - id: format_lighthouse_score
+        uses: actions/github-script@v3
         script: |
           const url_tested = ${{ steps.lighthouse_audit.outputs.manifest }}[0].url;
           console.log({ url_tested })
