@@ -21,8 +21,9 @@ jobs:
       - id: test_var
         run: |
           lighhouseResult=`cat ${{ steps.lighthouse_audit.outputs.resultsPath }}/lhr-*.json`
-          urlTested=${{ steps.lighthouse_audit.outputs.links }}
-          urlLink=`$(jq 'keys' <<< "$urlTested")`
+          urlTested=${{ steps.lighthouse_audit.outputs.manifest }}
+          echo $urlTested
+          urlLink=`(jq -r '.url' <<< "$urlTested")`
           fcp=`echo FCP: $(jq -r '.audits["first-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           lcp=`echo LCP $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           cls=`echo CLS $(jq -r '.audits["cumulative-layout-shift"].displayValue' <<< "$lighhouseResult")`
