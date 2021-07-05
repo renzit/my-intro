@@ -21,8 +21,7 @@ jobs:
       - id: test_var
         run: |
           lighhouseResult=`cat ${{ steps.lighthouse_audit.outputs.resultsPath }}/lhr-*.json`
-          urlTested = {{ steps.lighthouse_audit.outputs.manifest.url }}
-          urlTested = "holamundo"
+          urlTested=`{{ steps.lighthouse_audit.outputs.manifest.url }}`
           fcp=`echo FCP: $(jq -r '.audits["first-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           lcp=`echo LCP $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           cls=`echo CLS $(jq -r '.audits["cumulative-layout-shift"].displayValue' <<< "$lighhouseResult")`
