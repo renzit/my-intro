@@ -52,7 +52,7 @@ jobs:
         env:
           SLACK_CHANNEL: integracion
           SLACK_COLOR: ${{ job.status }}
-          SLACK_TITLE: ":zap: Web Performance for <${{steps.format_lighthouse_score.outputs.url}}|${{ github.event.repository.name }}>"
+          SLACK_TITLE: ":zap: Web Performance for <https://renzomayer.dev/|my-intro>"
           SLACK_MESSAGE: ${{steps.test_var.outputs.message}}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_FOOTER: "Powered by Alfred bot <www.google.com|hola>"
