@@ -1,15 +1,52 @@
 name: Lighthouse CI
-on: push
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "30 5,17 * * *"
+  workflow_dispatch:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Audit URLs using Lighthouse
+        id: lighthouse_audit
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            https://renzomayer.dev/
-          budgetPath: ./budget.json # test performance budgets
+            https://opgguides.com/
+          budgetPath: ./config/budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+      - id: test_var
+        run: |
+          lighhouseResult=`cat ${{ steps.lighthouse_audit.outputs.resultsPath }}/lhr-*.json`
+          fcp=`echo FCP: $(jq -r '.audits["first-contentful-paint"].displayValue' <<< "$lighhouseResult")`
+          lcp=`echo LCP $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
+          cls=`echo CLS $(jq -r '.audits["cumulative-layout-shift"].displayValue' <<< "$lighhouseResult")`
+          ttfb=`echo TTFB $(jq -r '.audits["server-response-time"].displayValue' <<< "$lighhouseResult")`
+          cpu_idle=`echo CPU_IDLE: $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
+          resource_summary=`echo Resouce Summmary: $(jq -r '.audits["resource-summary"].displayValue' <<< "$lighhouseResult")`
+          separator=" | "
+          message+=\"
+          message+=$(printf '%s' "$fcp")$separator
+          message+=$(printf '%s' "$lcp")$separator
+          message+=$(printf '%s' "$fpm")$separator
+          message+=$(printf '%s' "$cls")$separator
+          message+=$(printf '%s' "$ttfb")$separator
+          message+=$(printf '%s' "$resource_summary")$separator
+          message+=$(printf '%s' "$cpu_idle")$separator
+          message+=\"
+          echo "::set-output name=message::$message"
+          echo "$message"
+      - name: Send slack notification
+        uses: rtCamp/action-slack-notify@v2
+        if: ${{ always() }}
+        env:
+          SLACK_CHANNEL: integracion
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_TITLE: ":zap: Web Performance for guides"
+          SLACK_MESSAGE: ${{steps.test_var.outputs.message}}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_FOOTER: "Powered by Alfred bot"
+          MSG_MINIMAL: true
