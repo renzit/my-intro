@@ -22,7 +22,7 @@ jobs:
         run: |
           lighhouseResult=`cat ${{ steps.lighthouse_audit.outputs.resultsPath }}/lhr-*.json`
           urlTested=${{ steps.lighthouse_audit.outputs.links }}
-          echo "$urlTested"
+          urlLink=`$(jq 'keys' <<< "$urlTested")`
           fcp=`echo FCP: $(jq -r '.audits["first-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           lcp=`echo LCP $(jq -r '.audits["largest-contentful-paint"].displayValue' <<< "$lighhouseResult")`
           cls=`echo CLS $(jq -r '.audits["cumulative-layout-shift"].displayValue' <<< "$lighhouseResult")`
@@ -40,7 +40,7 @@ jobs:
           message+=$(printf '%s' "$cpu_idle")$separator
           message+=\"
           echo "::set-output name=message::$message"
-          echo "::set-output name=url::$urlTested"
+          echo "::set-output name=url::$urlLink"
           echo "$message"
       - name: Send slack notification
         uses: rtCamp/action-slack-notify@v2
